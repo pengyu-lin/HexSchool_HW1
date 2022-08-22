@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border box;
+  }
+  
+  .wrap {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #DDD9D9;
+    padding: 5px;
+  }
+  
+  .header img {
+    padding-left: 5px;
+  }
+  
+  .fb {
+    color: #6c7bad;
+    border-right: 1px solid black;
+    padding-right: 10px;
+  }
+  
+  .twitter {
+    color: #83caf8;
+  }
+  
+  .fb:hover, .twitter:hover {
+    color: #48d4aa;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar h1 a {
+    display: block;
+    width: 224px;
+    height: 50px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    display: block;
+    color: #48d4aa;
+    padding: 15px;
+  }
+  
+  .menu a:hover {
+    border-bottom: 3px solid #48d4aa;
+  }
+  
+  .hero {
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    background-size: cover;
+    background-position: 25% 75%;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .hero .title {
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 40px;
+    width: 100%;
+    line-height: 1.5;
+    position: absolute;
+    top: 100px;
+  }
+  
+  .title h2 {
+    margin: 40px;
+  }
+  
+  .topics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .html5, .rwd, .jQuery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.05);
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .jQuery li {
+    list-style-type: disc;
+  }
+  
+  .topics p {
+    padding: 0 10px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .content h2 {
+    font-size: 32px;
+    padding: 20px;
+  }
+  
+  .diff {
+    text-align: left;
+  }
+  
+  .diff th, .diff td {
+    border-bottom: 1px solid black;
+    padding: 10px 80px;
+  }
+  
+  .advantage {
+    color: #48d4aa;
+  }
+  
+  .items {
+    background: #ececec;
+    border-top: 1px solid black;
+  }
+  
+  .contact {
+    padding: 20px;
+    background: linear-gradient(#00644b, #009771);
+    color: white;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .userInput, textarea {
+    padding: 8px;
+    font-size: 15px;
+    width: 600px;
+    display: block;
+  }
+  
+textarea {
+    resize: none;
+}
+
+  input {
+    margin: 10px 0;
+  }
+  
+  .btn {
+    padding: 7px 20px;
+    color: white;
+    margin-top: 10px;
+    background: #48d4aa;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: white;
+    color: #48d4aa;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contactUs a {
+    color: red;
+  }
+  
+  .footer p {
+    line-height: 1.3;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
