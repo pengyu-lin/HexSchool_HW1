@@ -17,4 +17,11 @@ $(document).ready(function () {
             $('.dropdown1').toggleClass('active');
         }
     });
+
+    $('.contactUs img').click(function (e) { 
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+    });
 });
