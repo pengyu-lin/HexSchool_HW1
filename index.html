@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/javascript.js"></script>
     <title>使用 HTML、CSS 開發一個網站</title>
 </head>
@@ -55,23 +56,27 @@
             <div class="swiper-slide"><img src="img/bg_QA.png" alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
       <ul class="topics">
         <li class="html5">
-          <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="html5-logo">
+          <a href="img/html.png" data-lightbox="html5-logo" data-title="html5">
+            <img src="img/html.png" alt="html5-logo">
+          </a>
           <h3>Html 5 基礎教學</h3>
           <p>主流前端網站設計的基礎就在六角學院，在這裡不是填鴨式教學，而是透過實際的範例，瞭解咒確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
         </li>
         <li class="rwd">
-          <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="rwd-logo">
+          <a href="img/rwd.png" data-lightbox="rwd-logo" data-title="RWD">
+            <img src="img/rwd.png" alt="rwd-logo">
+          </a>
           <h3>響應式網站設計</h3>
           <p>響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
         </li>
         <li class="jQuery">
-          <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery-logo">
+          <a href="img/jQuery.png" data-lightbox="jQuery-logo" data-title="jQuery">
+            <img src="img/jQuery.png" alt="jQuery-logo">
+          </a>
           <h3>jQuery 實戰教學</h3>
           <p>本課程有以下特色</p>
           <ul>
@@ -154,7 +159,7 @@
       </div>
     </div>
     <script>
-      
+
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
@@ -166,14 +171,12 @@ const swiper = new Swiper('.swiper', {
     pagination: {
       el: '.swiper-pagination',
     },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
    
   });
+
+
+
     </script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
