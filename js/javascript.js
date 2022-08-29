@@ -1,23 +1,11 @@
-
 $(document).ready(function () {
-    $('.dropdown1').click(function (e) { 
+    $('.dropdown').click(function (e) { 
         e.preventDefault();
-        $('.dropdown1').toggleClass('active');
-        $('.dropdown1-open').stop().slideToggle();
-        if($('.dropdown2-open').is(':visible')){
-            $('.dropdown2-open').hide();
-            $('.dropdown2').toggleClass('active');
-        }
-    });
-    $('.dropdown2').click(function (e) { 
-        e.preventDefault();
-        $('.dropdown2').toggleClass('active');
-        $('.dropdown2-open').stop().slideToggle();
-        if($('.dropdown1-open').is(':visible')){
-            $('.dropdown1-open').hide();
-            $('.dropdown1').toggleClass('active');
-        }
-    });
+        $(this).toggleClass('active').parent().siblings().find('.dropdown').removeClass('active');
+        $(this).parent().find('.dropdown-open').slideToggle();
+        $(this).parent().siblings().find('.dropdown-open').hide();
+    })
+
 
     $('.contactUs img').click(function (e) { 
         e.preventDefault();
@@ -25,9 +13,22 @@ $(document).ready(function () {
             scrollTop: 0
         }, 700);
     });
+    
     lightbox.option({
         'disableScrolling': true
       })
 });
 
-
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    effect:'slide',
+    autoplay: {
+        delay: 5000,
+    },
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+   
+  });
